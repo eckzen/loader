@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  color: $font-color;
+}
+body {
+  margin: 0;
+  background-color: $bg-color;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+  font-size: 16px;
+}
+a {
+  color: $link-color;
+}

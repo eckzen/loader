@@ -1,0 +1,16 @@
+// Variables
+@import "variables";
+// Base
+@import "base";
+// Loader Animation
+@import "loader";
+// Page Animation
+@import "page";
+
+// Html content
+#myDiv {
+  text-align: center;
+  display: none;
+}
+/* Navigation */
+@import "nav";
