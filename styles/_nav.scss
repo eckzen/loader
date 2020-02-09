@@ -1,5 +1,5 @@
 .nav {
-  height: 50px;
+  height: 70px;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
@@ -31,7 +31,9 @@
 
 .nav > .nav-links {
   // display: inline;
-  float: right;
+  // float: right;
+  display: flex;
+  align-items: center;
   font-size: 18px;
 }
 
@@ -55,7 +57,7 @@
     display: inline-block;
     position: absolute;
     right: 0px;
-    top: 0px;
+    top: 10px;
   }
   .nav > .nav-btn > label {
     display: inline-block;
