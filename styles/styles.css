@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -35,7 +35,7 @@ a {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .loader-inner {
@@ -46,45 +46,45 @@ a {
   border-top-color: #09f;
   border-bottom-color: #09f;
   -webkit-animation: 10s rotate linear infinite;
-          animation: 10s rotate linear infinite;
+  animation: 10s rotate linear infinite;
 }
 
 @-webkit-keyframes rotate {
   0% {
     -webkit-transform: scale(1) rotate(360deg);
-            transform: scale(1) rotate(360deg);
+    transform: scale(1) rotate(360deg);
   }
   50% {
     -webkit-transform: scale(0.5) rotate(-360deg);
-            transform: scale(0.5) rotate(-360deg);
+    transform: scale(0.5) rotate(-360deg);
   }
   100% {
     -webkit-transform: scale(1) rotate(360deg);
-            transform: scale(1) rotate(360deg);
+    transform: scale(1) rotate(360deg);
   }
 }
 
 @keyframes rotate {
   0% {
     -webkit-transform: scale(1) rotate(360deg);
-            transform: scale(1) rotate(360deg);
+    transform: scale(1) rotate(360deg);
   }
   50% {
     -webkit-transform: scale(0.5) rotate(-360deg);
-            transform: scale(0.5) rotate(-360deg);
+    transform: scale(0.5) rotate(-360deg);
   }
   100% {
     -webkit-transform: scale(1) rotate(360deg);
-            transform: scale(1) rotate(360deg);
+    transform: scale(1) rotate(360deg);
   }
 }
 
 .animate-bottom {
   position: relative;
   -webkit-animation-name: animatebottom;
-          animation-name: animatebottom;
+  animation-name: animatebottom;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes animatebottom {
@@ -120,6 +120,12 @@ a {
   width: 100%;
   background-color: #4d4d4d;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .nav > .nav-header {
@@ -200,7 +206,8 @@ a {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
+    /* height: calc(100vh - 50px); */
+    height: 250px;
     overflow-y: auto;
   }
 }
