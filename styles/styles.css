@@ -1,8 +1,9 @@
+/* Base */
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -22,6 +23,7 @@ a {
   color: white;
 }
 
+/* Loader Animation */
 #load {
   width: 100%;
   background-color: black;
@@ -35,7 +37,7 @@ a {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .loader-inner {
@@ -46,45 +48,46 @@ a {
   border-top-color: #09f;
   border-bottom-color: #09f;
   -webkit-animation: 10s rotate linear infinite;
-  animation: 10s rotate linear infinite;
+          animation: 10s rotate linear infinite;
 }
 
 @-webkit-keyframes rotate {
   0% {
     -webkit-transform: scale(1) rotate(360deg);
-    transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
   }
   50% {
     -webkit-transform: scale(0.5) rotate(-360deg);
-    transform: scale(0.5) rotate(-360deg);
+            transform: scale(0.5) rotate(-360deg);
   }
   100% {
     -webkit-transform: scale(1) rotate(360deg);
-    transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
   }
 }
 
 @keyframes rotate {
   0% {
     -webkit-transform: scale(1) rotate(360deg);
-    transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
   }
   50% {
     -webkit-transform: scale(0.5) rotate(-360deg);
-    transform: scale(0.5) rotate(-360deg);
+            transform: scale(0.5) rotate(-360deg);
   }
   100% {
     -webkit-transform: scale(1) rotate(360deg);
-    transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
   }
 }
 
+/* Page Animation */
 .animate-bottom {
   position: relative;
   -webkit-animation-name: animatebottom;
-  animation-name: animatebottom;
+          animation-name: animatebottom;
   -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 @-webkit-keyframes animatebottom {
@@ -109,6 +112,7 @@ a {
   }
 }
 
+/* Html content */
 #myDiv {
   text-align: center;
   display: none;
@@ -124,16 +128,20 @@ a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav > .nav-header {
-  display: inline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav > .nav-header > .nav-title {
-  display: inline-block;
   font-size: 22px;
   color: #fff;
   padding: 10px 10px 10px 10px;
@@ -206,9 +214,8 @@ a {
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    /* height: calc(100vh - 50px); */
     height: 250px;
-    overflow-y: auto;
+    overflow: hidden;
   }
 }
 /*# sourceMappingURL=styles.css.map */

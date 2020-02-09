@@ -8,14 +8,20 @@
 }
 
 .nav > .nav-header {
-  display: inline;
+  display: flex;
+  align-items: center;
+  // display: inline;
+  // justify-content: center;
 }
 
 .nav > .nav-header > .nav-title {
-  display: inline-block;
   font-size: 22px;
   color: #fff;
   padding: 10px 10px 10px 10px;
+  // display: inline-block;
+  // display: flex;
+  // justify-content: center;
+  // height: 50px;
 }
 
 .nav > .nav-btn {
@@ -85,7 +91,9 @@
     height: 0px;
   }
   .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
+    height: 250px;
+    overflow: hidden;
+    // height: calc(100vh - 50px);
+    // overflow-y: auto;
   }
 }
