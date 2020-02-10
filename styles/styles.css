@@ -120,18 +120,33 @@ a {
 }
 
 /* Navigation */
-.nav {
+nav {
+  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 70px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1080px;
+  height: 70px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 1;
 }
 
 .nav > .nav-header {
