@@ -1,0 +1,8 @@
+*.css.map
+*.css
+# .gitignore
+# ./styles/_loader.scss
+# ./styles/_nav.scss
+# ./styles/_page.scss
+# ./styles/_hero.scss
+./styles/styles.css.map
